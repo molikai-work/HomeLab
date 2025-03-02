@@ -26,7 +26,7 @@ export const siteConfig = {
     { name: "我的项目", path: "/projects" },
     { name: "开源地址", path: "https://github.com/molikai-work/HomeLab", target: "_blank", rel: "external nofollow noreferrer noopener" },
   ],
-  
+
   // 个人信息
   profile: {
     avatar: "/images/avatar.png",
@@ -198,7 +198,7 @@ export const siteConfig = {
       name: "个人主页",
       description: "基于 v0.dev 提供的灵感创作的，使用 Next.js 框架，美观、简洁的静态个人主页。",
       tags: ["Next.js", "TypeScript"],
-      status: "beta",
+      status: "in_progress",
       github: "https://github.com/molikai-work/HomeLab",
       demo: "https://homelabe.pages.dev/",
     },
