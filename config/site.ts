@@ -4,15 +4,15 @@ export const siteConfig = {
   // 网站基本信息
   author: "墨离",
   username: "molikaiwork",
-  title: "墨离的主页",
-  description: "这里是墨离的个人主页，墨离会在这里放一些东西来记录一下，诶嘿欢迎来看看~",
+  title: "个人主页",
+  description: "基于 v0.dev 提供的灵感创作的，使用 Next.js 框架，美观、简洁的静态个人主页。",
   keywords: ["molikai", "molikaiwork", "墨离", "墨离开", "主页"],
-  baseUrl: "https://molikaiwork.pages.dev",
+  baseUrl: "https://homelabe.pages.dev",
   startYear: 2025,
 
   // 备案信息
   icp: {
-    enable: true,
+    enable: false,
     name: "萌ICP备20250089号",
     url: "https://icp.gov.moe/?keyword=20250089",
   },
@@ -200,7 +200,7 @@ export const siteConfig = {
       tags: ["Next.js", "TypeScript"],
       status: "beta",
       github: "https://github.com/molikai-work/HomeLab",
-      demo: "https://molikaiwork.pages.dev/",
+      demo: "https://homelabe.pages.dev/",
     },
     {
       name: "待办事项清单",
