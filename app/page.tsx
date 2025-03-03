@@ -1,5 +1,8 @@
 // app/page.tsx
 
+"use client";
+
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import * as LucideIcons from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -9,8 +12,15 @@ import { TechStackSection } from "@/components/tech-stack-section"
 import { siteConfig } from "@/config/site"
 
 export default function Home() {
+  const [randomQuote, setRandomQuote] = useState("")
+
+  useEffect(() => {
+    const quotes = siteConfig.homeQuotes
+    setRandomQuote(quotes[Math.floor(Math.random() * quotes.length)])
+  }, [])
+
   return (
-    <PageLayout title={siteConfig.homeQuotes}>
+    <PageLayout title={randomQuote}>
       <ProfileSection />
       <TechStackSection />
 
