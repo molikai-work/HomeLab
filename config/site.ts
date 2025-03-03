@@ -8,6 +8,17 @@ export const siteConfig = {
   description: "基于 v0.dev 提供的灵感创作的，使用 Next.js 框架，美观、简洁的静态个人主页。",
   keywords: ["molikai", "molikaiwork", "墨离", "墨离开", "主页"],
   baseUrl: "https://homelabe.pages.dev",
+  robots: [
+    {
+      userAgent: "*",
+      allow: ["/"],
+      disallow: ["/images/"],
+    },
+    {
+      userAgent: "Baiduspider",
+      disallow: ["/"],
+    },
+  ],
   startYear: 2025,
 
   // 备案信息
